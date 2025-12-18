@@ -1,0 +1,92 @@
+.chat-header {
+    background-color: var(--color-charcoal-smoke);
+    color: var(--color-ash-mist);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: var(--color-ash-mist);
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.chat-header-userdetails {
+    display: flex;
+    align-items: center;
+}
+
+.message-input,
+.message-input::placeholder {
+    color: black;
+}
+
+.no-messages {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+}
+
+.private-message {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    max-width: 80%;
+    word-break: break-word;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.2rem;
+}
+
+.message-container>.own-message {
+    align-self: flex-end;
+    background-color: var(--color-ash-mist);
+}
+
+.message-container>.received-message {
+    align-self: flex-start;
+    background-color: var(--color-ash-recipient);
+}
+
+.own-message,
+.received-message {
+    min-width: 13em;
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+}
+
+.private-chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-y: auto;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-midnight-shift) var(--color-ash-mist);
+    scroll-behavior: auto;
+}
+
+.message-body {
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.4;
+}

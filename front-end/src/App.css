@@ -1,0 +1,23 @@
+.App {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+:root {
+    --color-charcoal-smoke: #2d3436;
+    --color-electric-lilac: #a29bfe;
+    --color-neon-coral: #ff7675;
+    --color-ash-mist: #dfe6e9;
+    --color-ash-recipient: #c6dee868;
+    --color-midnight-shift: #636e72;
+    --color-mint-spark: #55efc4;
+    --color-amber-burst: #ffeaa7;
+    --secondary-hover-text: #00cec9;
+    --secondary-hover-background: #636e72;
+    --input-text-color: #fff;
+}
+
+body {
+    background-color: var(--color-ash-mist);
+    color: var(--color-charcoal-smoke);
+    margin-top: 4rem;
+}
